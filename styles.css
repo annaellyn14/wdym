@@ -1,0 +1,130 @@
+/* COLORS
+    #f50542: red/magenta
+    #ffde59: yellow
+    #4472a8: blue 
+    white, black
+*/
+
+:root {
+    --primary1: #ef3c23;
+    --primary2: #fac92c;
+    --primary3: #2178ae;
+    --secondary1: #f7b0be;
+    --secondary2: #ed8e83;
+    --secondary3: #f15a42;
+    --secondary4: #cfe5cc;
+    --secondary5: #1b4793;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+nav ul {
+    display: flex;  
+    list-style: none;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav a {
+    color: black;
+    font-family: Poppins;
+    font-variant: small-caps;
+    letter-spacing: .5px;
+    font-size: 25px;
+}
+
+a:hover {
+    color: var(--primary1);
+}
+
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 25px;
+    text-align: center;
+}
+
+a.logo {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex img {
+    max-width: 55%;
+    height: auto;
+    position: relative;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 2rem 0;
+    border-top: 7px solid var(--secondary1);
+    border-left: 7px solid var(--primary2);
+    border-bottom: 7px solid var(--secondary5);
+}
+
+header img {
+    width: 10vw;
+    margin-left: 20px;
+    overflow-y: hidden;
+}
+
+.homepage-text {
+    padding: 0 2em;
+}
+
+.homepage-text h1, p {
+    font-family: Poppins, sans-serif;
+}
+
+.homepage-text p {
+    margin-top: 1em;
+}
+
+.homepage-text h1 {
+    font-variant: small-caps;
+    color: var(--primary3);
+    opacity: 0.5;
+    font-size: 2em;
+}
+
+.homepage-text h2 {
+    font-family: 'Rozha One', serif;
+    font-size: 2em;
+    margin: 0;
+}
+
+.italic {
+    font-style: italic;
+}
