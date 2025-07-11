@@ -27,7 +27,18 @@ html, body {
     background-color: white;
 }
 
+div.social-icons {
+    display: flex;
+    justify-content: center;
+}
 
+div.social-icons i {
+    margin: 5px;
+}
+
+i.fa-brands {
+    font-size: 30px;
+}
 
 header {
     display: flex;
@@ -48,14 +59,14 @@ nav.navbar ul.menu {
 
 nav.navbar ul.menu a {
     padding: 0 8px 2px 8px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: black;
     font-weight: 300;
 }
 
-nav.navbar ul.menu a:hover {
+nav.navbar ul.menu a:active{
     color: green;
     border-radius: 5px;
     background-color: var(--secondary4);
@@ -70,8 +81,8 @@ nav.navbar ul.menu a:hover {
     padding: 1rem;
 }
 
-.flex img {
-    width: 50%;
+div.flex img.homepage-image {
+    width: 80%;
     height: auto;
     border-radius: 30px;
     margin: 1rem 0;
@@ -94,8 +105,8 @@ header img {
 .homepage-text h1 {
     font-variant: small-caps;
     color: var(--primary3);
-    opacity: 0.5;
-    font-size: 1.5em;
+    font-size: 3em;
+    font-weight: 700;
 }
 
 .homepage-text h2 {
@@ -113,6 +124,58 @@ header img {
     font-style: italic;
 }
 
+.page-wrapper {
+    position: relative;
+}
+
+
+.yellow-circle-pink-triangle {
+    position: absolute;
+    z-index: 0;
+    top: 1%;
+    pointer-events: none;
+}
+
+.yellow-circle-pink-triangle img.yellow-circle-pink-triangle-home {
+    width: 40%;
+    z-index: -1;
+}
+
+.red-propeller {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    bottom: 55%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.red-propeller img.red-propeller-home {
+    width: 30%;
+    transform: rotate(45deg);
+}
+
+.blue-circle-green-ring {
+    position: absolute;
+    z-index: 0;
+    top:90%;
+    pointer-events: none;
+}
+
+.blue-circle-green-ring img.blue-circle-green-ring-home {
+    width: 40%;
+}
+
+footer {
+    margin: 1rem;
+}
+
+.flex section.homepage-text, header, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/*FOR LARGER SCREENS*/
 @media (min-width: 768px) {
     header {
         flex-direction: row;
@@ -129,6 +192,18 @@ header img {
         margin: 2px;
     }
 
+    nav.navbar ul.menu a:hover {
+        color: green;
+        border-radius: 5px;
+        background-color: var(--secondary4);
+    }
+
+    nav.navbar ul.menu a:active {
+        color: var(--secondary4);
+        border-radius: 5px;
+        background-color: green;
+    }
+
     .flex {
         flex-direction: row;
         justify-content: space-between;
@@ -136,7 +211,7 @@ header img {
         padding: 2rem;
     }
 
-    div.flex img.homepage-img {
+    .flex img.homepage-image {
         max-width: 50%;
         margin: 2rem 0;
         border-top-left-radius: 50px;
@@ -149,18 +224,42 @@ header img {
     }
 
     .homepage-text h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .homepage-text h2 {
         font-size: 2em;
     }
+
+    .yellow-circle-pink-triangle {
+        top: 13%;
+    }
+
+    .yellow-circle-pink-triangle img.yellow-circle-pink-triangle-home {
+        width: 50%;
+    }
+
+    .green-circle-green-curl {
+        left: 20%;
+        bottom: 75%;
+    }
+
+    .green-circle-green-curl img.green-circle-green-curl-home {
+        width: 50%;
+    }
+
+    .blue-circle-green-ring {
+        left: 80%;
+        top: 80%;
+    }
+
+    .blue-circle-green-ring img.blue-circle-green-ring-home {
+        width: 400px;
+    }
 }
 
     @media (min-width: 1024px) {
-        nav.navbar a {
+        nav.navbar ul.menu a {
             font-size: 25px;
         }
     }
-
-
