@@ -8,12 +8,25 @@
 :root {
     --primary1: #ef3c23;
     --primary2: #fac92c;
-    --primary3: #2178ae;
-    --secondary1: #f7b0be;
-    --secondary2: #ed8e83;
-    --secondary3: #f15a42;
-    --secondary4: #cfe5cc;
-    --secondary5: #1b4793;
+    --primary3: #00479a;
+    --primary4: #fe93bf;
+    
+}
+
+.primary1 {
+    color: var(--primary1);
+}
+
+.primary2 {
+    color: var(--primary2);
+}
+
+.primary3 {
+    color: var(--primary3);
+}
+
+.primary4 {
+    color: var(--primary4);
 }
 
 * {
@@ -59,19 +72,38 @@ nav.navbar ul.menu {
 
 nav.navbar ul.menu a {
     padding: 0 8px 2px 8px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     color: black;
-    font-weight: 300;
+    font-variant: small-caps;
+    font-weight: 400;
 }
 
-nav.navbar ul.menu a:active{
-    color: green;
+nav.navbar ul.menu a:active {
     border-radius: 5px;
-    background-color: var(--secondary4);
+    font-weight: 700;
 }
 
+nav.navbar ul.menu a.hover-primary1:active {
+    color: var(--primary1);
+    background-color: #ef3b2369;
+}
+
+nav.navbar ul.menu a.hover-primary2:active {
+    color: var(--primary2);
+    background-color: #faca2c69;
+}
+
+nav.navbar ul.menu a.hover-primary3:active {
+    color: var(--primary3);
+    background-color: #00479a69;
+}
+
+nav.navbar ul.menu a.hover-primary4:active {
+    color: var(--primary4);
+    background-color: #fe93bf69;
+}
 
 .flex {
     display: flex;
@@ -98,21 +130,22 @@ header img {
     padding: 1rem;
 }
 
-.homepage-text h1, .hompepage-text p {
+ .hompepage-text p {
     font-family: 'Poppins', sans-serif;
 }
 
-.homepage-text h1 {
-    font-variant: small-caps;
-    color: var(--primary3);
-    font-size: 3em;
-    font-weight: 700;
+h1 {
+    font-family: 'Modak', serif;
+    color: black;
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 .homepage-text h2 {
     font-family: 'Rozha One', serif;
     font-size: 1.3em;
-    margin: 0.5 0;
 }
 
 .homepage-text p {
@@ -175,6 +208,24 @@ footer {
     z-index: 1;
 }
 
+.homepage-text a {
+    background: var(--primary2);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0 10px 2px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    display: inline-block;
+    margin: 1rem;
+}
+
+
+
 /*FOR LARGER SCREENS*/
 @media (min-width: 768px) {
     header {
@@ -187,21 +238,29 @@ footer {
         flex-direction: row;
     }
 
-    nav.navbar ul.menu a {
-        font-size: 22px;
-        margin: 2px;
-    }
-
     nav.navbar ul.menu a:hover {
-        color: green;
         border-radius: 5px;
-        background-color: var(--secondary4);
+        font-weight: 700;
     }
 
-    nav.navbar ul.menu a:active {
-        color: var(--secondary4);
-        border-radius: 5px;
-        background-color: green;
+    nav.navbar ul.menu a.hover-primary1:hover{
+        color: var(--primary1);
+        background-color: #ef3b2369;
+    }
+
+    nav.navbar ul.menu a.hover-primary2:hover {
+        color: var(--primary2);
+        background-color: #faca2c69;
+    }
+
+    nav.navbar ul.menu a.hover-primary3:hover {
+        color: var(--primary3);
+        background-color: #00479a69;
+    }
+
+    nav.navbar ul.menu a.hover-primary4:hover {
+        color: var(--primary4);
+        background-color: #fe93bf69;
     }
 
     .flex {
@@ -223,38 +282,12 @@ footer {
         max-width: 50%;
     }
 
-    .homepage-text h1 {
-        font-size: 3em;
+    h1 {
+        font-size: 6em;
     }
 
     .homepage-text h2 {
         font-size: 2em;
-    }
-
-    .yellow-circle-pink-triangle {
-        top: 13%;
-    }
-
-    .yellow-circle-pink-triangle img.yellow-circle-pink-triangle-home {
-        width: 50%;
-    }
-
-    .green-circle-green-curl {
-        left: 20%;
-        bottom: 75%;
-    }
-
-    .green-circle-green-curl img.green-circle-green-curl-home {
-        width: 50%;
-    }
-
-    .blue-circle-green-ring {
-        left: 80%;
-        top: 80%;
-    }
-
-    .blue-circle-green-ring img.blue-circle-green-ring-home {
-        width: 400px;
     }
 }
 
@@ -262,4 +295,5 @@ footer {
         nav.navbar ul.menu a {
             font-size: 25px;
         }
+
     }
