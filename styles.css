@@ -37,6 +37,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    height: 100%;
     background-color: white;
 }
 
@@ -134,7 +135,7 @@ header img {
     font-family: 'Poppins', sans-serif;
 }
 
-h1 {
+ h1 {
     font-family: 'Modak', serif;
     color: black;
     font-size: 4em;
@@ -159,44 +160,6 @@ h1 {
 
 .page-wrapper {
     position: relative;
-}
-
-
-.yellow-circle-pink-triangle {
-    position: absolute;
-    z-index: 0;
-    top: 1%;
-    pointer-events: none;
-}
-
-.yellow-circle-pink-triangle img.yellow-circle-pink-triangle-home {
-    width: 40%;
-    z-index: -1;
-}
-
-.red-propeller {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    bottom: 55%;
-    z-index: 0;
-    pointer-events: none;
-}
-
-.red-propeller img.red-propeller-home {
-    width: 30%;
-    transform: rotate(45deg);
-}
-
-.blue-circle-green-ring {
-    position: absolute;
-    z-index: 0;
-    top:90%;
-    pointer-events: none;
-}
-
-.blue-circle-green-ring img.blue-circle-green-ring-home {
-    width: 40%;
 }
 
 footer {
@@ -224,7 +187,38 @@ footer {
     margin: 1rem;
 }
 
+/*
+.contact-image {
+    text-align: center;
+    border: solid 2px black;
+}
 
+.contact-image img {
+    width: 80vw;
+    border-radius: 30px;
+    position: relative;
+}
+
+*/
+
+h1.hero-contact, .contact-text {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-image {
+    position: relative;
+    z-index: 0;
+    transform: translateY(-15vh);
+}
+
+.contact-image img {
+    width: 100vw;
+}
 
 /*FOR LARGER SCREENS*/
 @media (min-width: 768px) {
