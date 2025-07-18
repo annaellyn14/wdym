@@ -7,7 +7,7 @@
 
 :root {
     --primary1: #ef3c23;
-    --primary2: #fac92c;
+    --primary2: #fed000;
     --primary3: #00479a;
     --primary4: #fe93bf;
     
@@ -167,28 +167,7 @@ footer {
     z-index: 1;
 }
 
-.homepage-text a {
-    background: var(--primary3);
-    font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--primary3);
-    border-radius: 25px;
-    color: white;
-    font-variant: small-caps;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0 1rem 0.25rem 1rem;
-    text-decoration: none;
-    white-space: nowrap;
-    display: inline-block;
-    margin: 1rem;
-}
 
-.homepage-text a:hover {
-    background: var(--primary2);
-    color: black;
-    border: 2px solid black;
-
-}
 /*
 .contact-image {
     text-align: center;
@@ -220,6 +199,12 @@ h1.hero-contact, .contact-text {
 
 .contact-image img {
     width: 100vw;
+}
+
+.listen img {
+    width: 30vw;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
 /*FOR LARGER SCREENS*/
@@ -284,6 +269,19 @@ h1.hero-contact, .contact-text {
 
     .homepage-text h2 {
         font-size: 2em;
+    }
+
+    div.flex {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem;
+    }
+
+    .listen img {
+        width: 12vw;
+        display: block;
+        margin: 0 auto;
+
     }
 }
 
