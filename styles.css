@@ -54,6 +54,12 @@ i.fa-brands {
     font-size: 30px;
 }
 
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -131,7 +137,7 @@ header img {
     padding: 1rem;
 }
 
- h1 {
+h1 {
     font-family: 'Caprasimo', serif;
     color: black;
     font-size: 4em;
@@ -140,8 +146,11 @@ header img {
     letter-spacing: 2px;
 }
 
-.homepage-text h2 {
+h2 {
     font-family: 'Rozha One', serif;
+}
+
+.homepage-text h2 {
     font-size: 1.3em;
 }
 
@@ -166,7 +175,6 @@ footer {
     position: relative;
     z-index: 1;
 }
-
 
 /*
 .contact-image {
@@ -202,9 +210,29 @@ h1.hero-contact, .contact-text {
 }
 
 .listen img {
-    width: 30vw;
+    width: 20vw;
     border-radius: 50%;
-    margin: 0 auto;
+    margin: 2.5rem auto;
+}
+
+
+.about-text {
+    position: relative;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* 7/20/25 - Learn more about grid - then use for .anna .marla h2 */
+
+.about-image {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.about-image img {
+    width: 40vw;
 }
 
 /*FOR LARGER SCREENS*/
@@ -278,10 +306,8 @@ h1.hero-contact, .contact-text {
     }
 
     .listen img {
-        width: 12vw;
+        width: 10vw;
         display: block;
-        margin: 0 auto;
-
     }
 }
 
