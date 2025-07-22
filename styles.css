@@ -63,7 +63,8 @@ body {
 
 .hero {
     width: 100vw;
-    height: 70vh;
+    height: auto;
+    margin-bottom: 8rem;
 }
 
 .hero img {
@@ -71,8 +72,8 @@ body {
     height: auto;
 }
 
-.text-block {
-    height: 60vh;
+.text-block-hero {
+    height: 50vh;
     width: 60vw;
     display: flex;
     flex-direction: column;
@@ -81,38 +82,100 @@ body {
 }
 
 .buttons {
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     gap: 1.5em;
     flex-direction: row-reverse;
+    margin: 2rem;
+}
+
+.buttons button {
+    font-size: 1.2em;
+    border-radius: 1.5em;
+    font-family: 'Bitter', serif;
+    padding: 0.5em 1.2em;
+    font-weight: 600;
 }
 
 .button-primary button {
     color: white;
     background: var(--primary1);
     border: 1px solid var(--primary1);
-    border-radius: 1.5em;
 }
 
 .button-secondary button {
     color: var(--neutral-dark);
     background: white;
     border: 1px solid var(--neutral-dark);
-    border-radius: 1.5em;
 }
+
+.button-primary button:hover,
+.button-secondary button:hover {
+    color: var(--primary1);
+    background: var(--primary1-hover);
+    border: 1px solid var(--primary1);
+    cursor: pointer;
+}
+
+.button-primary button:active,
+.button-secondary button:active {
+    color: var(--primary1);
+    background: var(--primary1-hover);
+    border: 1px solid var(--primary1);
+    cursor: pointer;
+}
+
 
 h1 {
     font-family: 'Shrikhand', serif;
     font-size: 2em;
 }
 
-h2 {
+.text-block-hero h2 {
     font-family: 'Shrikhand', serif;
     font-size: 1.5em;
     font-weight: 300;
     color: var(--primary1);
 }
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-content p {
+    text-align: right;
+    padding: 0 1rem;
+}
+
+.about-content img {
+    width: 60vw;
+    height: auto;
+}
+
+.about h2 {
+    font-family: 'Shrikhand', serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--neutral-dark);
+    text-align: right;
+    padding: 0 1rem;
+}
+
+.social-media {
+    background: var(--primary1);
+    position: relative;
+    bottom: 8vw;
+}
+
+.social-media h2 {
+    font-family: 'Shrikhand', serif;
+    font-size: 2em;
+    color: var(--neutral-light);
+    font-weight: 300;
+    text-align: center;
+}
+
 
 p {
     font-size: 1em;
@@ -138,6 +201,6 @@ h1 {
 
 }
 
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
      
-    }
+}
