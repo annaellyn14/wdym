@@ -172,7 +172,7 @@ p {
     align-items: center;
     width: 100vw;
     height: 50vh;
-    background-image: url("Pictures/PiggybackFlip.png");
+    background-image: url("Pictures/PiggyBackFlip.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
