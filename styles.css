@@ -118,17 +118,24 @@ a {
 header {
     width: 100vw;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0;
 }
 
 
 .header-image {
-    min-width: 70px;
-    max-width: 100px;
+    min-width: 60px;
+    max-width: 60px;
 }
-
 
 .hero {
     width: 100vw;
@@ -141,7 +148,7 @@ header {
 }
 
 .text-block-hero {
-    height: 80vh;
+    height: 60vh;
     width: 80vw;
     display: flex;
     flex-direction: column;
@@ -151,7 +158,8 @@ header {
 
 h1 {
     font-family: 'Shrikhand', serif;
-    font-size: 5em;
+    font-size: 4em;
+    margin: 2rem;
 }
 
 h2 {
@@ -195,9 +203,8 @@ p {
     font-family: 'Shrikhand', serif;
     font-size: 3em;
     font-weight: 300;
-    color: var(--primary4);
+    color: var(--primary1);
     text-align: center;
-    z-index: 0;
 }
 
 .bold {
@@ -208,7 +215,7 @@ p {
     text-align: center;
 }
 
-.social-media {
+.follow-us {
     background: var(--primary4-light);
     width: 100vw;
     height: auto;
@@ -219,21 +226,22 @@ li {
     list-style: none;
 }
 
-.social-media h2 {
-    font-size: 3.5rem;
+.follow-us h2 {
+    font-size: 2rem;
     color: var(--neutral-dark);
     font-weight: 500;
     text-align: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .contact {
     height: 100vh;
     background-image: url(Pictures/WDYM14FINAL.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+
 
 .main-nav li {
     list-style: none;
@@ -244,6 +252,7 @@ li {
     font-family: 'Bitter', serif;
     text-transform: lowercase;
     font-weight: 500;
+    font-size: 0.8rem;
 }
 
 .large-text {
@@ -256,55 +265,46 @@ li {
     margin: 2rem;
 }
 
-.contact {
-    height: 100vh;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-}
-
 .contact h2 {
     font-weight: 500;
     font-size: 2rem;
 }
 
-.name {
-    display: flex;
-    border: 2px solid red;
-    gap: 0.5em;
+.contact-form {
+    text-align: left;
 }
 
 .contact label {
     font-family: 'Bitter', serif;
     text-align: left;
     font-weight: 700;
-    color: var(--primary4-dark);
+    color: black;
+    display: block;
+    margin-top: 1em;
+    text-align: left;
 }
 
 input, textarea {
     border: 2px solid var(--primary4-light);
     border-radius: 5px;
     background: rgba(240, 233, 233, 0.5);
+    padding: 0.5em;
+    font-family: 'Bitter', serif;
+    font-size: 1em;
+}
+
+textarea {
+    margin-bottom: 2em;
 }
 
 input:focus,
 textarea:focus {
-    border: 2px solid var(--primary1-light);
+    border: 2px solid var(--primary1);
     outline: none;
 }
 
-#message {
-    width: 300px;
-    height: 300px;
-}
-
 .submit-button button {
-    width: 30vw;
+    width: 20vw;
     height: auto;
     background: var(--primary4-light);
     color: black;
@@ -321,6 +321,25 @@ textarea:focus {
     background: var(--primary2);
     color: black;
     border: 2px solid black;
+}
+
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: none;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+
+legend {
+    font-size: 2em;
+    padding: 0 .25em;
+    font-family: 'Shrikhand', serif;
+    color: var(--primary1);
 }
 
 /*FOR LARGER SCREENS*/
