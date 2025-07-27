@@ -64,9 +64,8 @@ a {
 .hero-buttons {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    margin-top: 3rem;
     gap: 1rem;
-    margin-top: 1rem;
     flex-wrap: nowrap;
 }
 
@@ -90,7 +89,7 @@ a {
 .anchor-secondary {
     display: inline-block;
     background: var(--primary4-light);
-    color: var(--primary4-dark);
+    color: var(--neutral-dark);
     border: 1px solid var(--primary4-dark);
     border-radius: 24px;
     padding: 0.3rem 1.2rem;
@@ -121,12 +120,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 
 .header-image {
-    width: 10vw;
-    min-width: 100px;
+    min-width: 70px;
+    max-width: 100px;
 }
 
 
@@ -141,8 +141,8 @@ header {
 }
 
 .text-block-hero {
-    height: 60vh;
-    width: 60vw;
+    height: 80vh;
+    width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,26 +173,22 @@ p {
 .about-text {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-image: url("Pictures/PiggyBackFlip.png");
-    background-size: contain;
+    background-size: 470px auto;
     background-repeat: no-repeat;
     background-position: right bottom;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .about-p {
     border-radius: 24px;
     padding: 2rem;
     text-align: center;
-    text-align: left;
-}
-
-.about-button {
-    margin-top: 2rem;
-    padding: 1.2rem;
+    width: 70vw;
 }
 
 .about h2 {
@@ -214,55 +210,29 @@ p {
 
 .social-media {
     background: var(--primary4-light);
+    width: 100vw;
+    height: auto;
+    padding-bottom: 2rem;
 }
 
-.social-list {  
-    display: flex;
-    flex-direction: column;
+li {
     list-style: none;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.social-list li {
-    margin: 1.5rem 0;
-}
-
-.social-list li:first-child {
-    margin-bottom: 5rem;
 }
 
 .social-media h2 {
-    font-size: 3rem;
-    color: var(--primary-dark);
+    font-size: 3.5rem;
+    color: var(--neutral-dark);
     font-weight: 500;
-}
-
-.social-app {
-    width: 400px;
-    height: 400px;
+    text-align: center;
+    padding: 3rem 0;
 }
 
 .contact {
     height: 100vh;
     background-image: url(Pictures/WDYM14FINAL.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-}
-
-.main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.main-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    margin: 0 2rem;
 }
 
 .main-nav li {
@@ -274,6 +244,83 @@ p {
     font-family: 'Bitter', serif;
     text-transform: lowercase;
     font-weight: 500;
+}
+
+.large-text {
+    font-size: 1.2rem;
+}
+
+.instagram, .youtube, .spotify {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.contact {
+    height: 100vh;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.contact h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.name {
+    display: flex;
+    border: 2px solid red;
+    gap: 0.5em;
+}
+
+.contact label {
+    font-family: 'Bitter', serif;
+    text-align: left;
+    font-weight: 700;
+    color: var(--primary4-dark);
+}
+
+input, textarea {
+    border: 2px solid var(--primary4-light);
+    border-radius: 5px;
+    background: rgba(240, 233, 233, 0.5);
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid var(--primary1-light);
+    outline: none;
+}
+
+#message {
+    width: 300px;
+    height: 300px;
+}
+
+.submit-button button {
+    width: 30vw;
+    height: auto;
+    background: var(--primary4-light);
+    color: black;
+    padding: 0.2rem 1rem;
+    border: 2px solid black;
+    border-radius: 24px;
+    font-family: 'Bitter', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.submit-button button:hover {
+    background: var(--primary2);
+    color: black;
+    border: 2px solid black;
 }
 
 /*FOR LARGER SCREENS*/
