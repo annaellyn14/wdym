@@ -59,6 +59,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
     text-decoration: none;
+    font-family: 'Bitter', serif;
 }
 
 .hero-buttons {
@@ -67,10 +68,6 @@ a {
     margin-top: 3rem;
     gap: 1rem;
     flex-wrap: nowrap;
-}
-
-.about-button {
-    text-align: center;
 }
 
 .anchor-primary {
@@ -83,7 +80,7 @@ a {
     z-index: 2;
     flex-basis: 1 0 0;
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .anchor-secondary {
@@ -97,22 +94,20 @@ a {
     flex-basis: 1 0 0;
     position: relative;
     white-space: nowrap;
-    font-weight: 500;
 }
 
 
 .anchor-primary:hover, .anchor-primary:active {
     color: black;
-    background: var(--primary2);
-    border: 1px solid black;
-    font-weight: 700;
+    background: var(--primary1-light);
+    border: 1px solid var(--primary1-light);
 }
 
 .anchor-secondary:hover, .anchor-secondary:active {
     color: black;
-    background: var(--primary2);
-    border: 1px solid black;
-    font-weight: 700;
+    background: var(--primary4-light);
+    border: 1px solid var(--primary4-light);
+
 }
 
 header {
@@ -122,6 +117,9 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: fixed;
+    background: white;
+    z-index: 99;
 }
 
 .main-nav ul {
@@ -131,6 +129,53 @@ header {
     padding: 0;
 }
 
+.main-nav ul li a {
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 40px;
+    padding: 0.5rem 0.5rem;
+    color: rgb(87, 82, 82);
+}
+
+.main-nav ul li:nth-child(1) a {
+    background: var(--primary1-hover);
+}
+
+.main-nav ul li:nth-child(2) a {
+    background: var(--primary2-hover);
+}
+
+.main-nav ul li:nth-child(3) a {
+    background: var(--primary3-hover);
+}
+
+.main-nav ul li:nth-child(4) a {
+    background: var(--primary4-hover);
+}
+
+.main-nav ul li:nth-child(1) a:hover,
+.main-nav ul li:nth-child(1) a:active {
+    color: black;
+    background: var(--primary1-light);
+}
+
+.main-nav ul li:nth-child(2) a:hover,
+.main-nav ul li:nth-child(2) a:active {
+    color: black;
+    background: var(--primary2-light);
+}
+
+.main-nav ul li:nth-child(3) a:hover,
+.main-nav ul li:nth-child(3) a:active {
+    color: black;
+    background: rgb(142, 180, 230);
+}
+
+.main-nav ul li:nth-child(4) a:hover,
+.main-nav ul li:nth-child(4) a:active {
+    color: black;
+    background: var(--primary4-light);
+}
 
 .header-image {
     min-width: 60px;
@@ -145,6 +190,8 @@ header {
 .hero img {
     width: 100%;
     height: auto;
+    position: relative;
+    top: 50px;
 }
 
 .text-block-hero {
@@ -160,6 +207,8 @@ h1 {
     font-family: 'Shrikhand', serif;
     font-size: 4em;
     margin: 2rem;
+    position: relative;
+    top: 50px;
 }
 
 h2 {
@@ -181,21 +230,44 @@ p {
 .about-text {
     position: relative;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-image: url("Pictures/PiggyBackFlip.png");
-    background-size: 470px auto;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right bottom;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    flex: 0 0 auto;
+}
+
+.about-text a {
+    display: inline-block;
+    background: var(--primary4-light);
+    color: black;
+    border: 1px solid var(--primary4-dark);
+    border-radius: 24px;
+    padding: 0.3rem 1.2rem;
+}
+
+.about-text a:hover,
+.about-text a:active {
+    color: black;
+    background: var(--primary4-light);
+    border: 1px solid var(--primary4-light);
 }
 
 .about-p {
     border-radius: 24px;
     padding: 2rem;
-    text-align: center;
+    text-align: left;
     width: 70vw;
 }
 
@@ -304,12 +376,12 @@ textarea:focus {
 }
 
 .submit-button button {
-    width: 20vw;
+    width: 100px;
     height: auto;
     background: var(--primary4-light);
-    color: black;
+    color: var(--primary4-dark);
     padding: 0.2rem 1rem;
-    border: 2px solid black;
+    border: 2px solid var(--primary4-dark);
     border-radius: 24px;
     font-family: 'Bitter', serif;
     font-size: 1.2rem;
@@ -318,7 +390,7 @@ textarea:focus {
 }
 
 .submit-button button:hover {
-    background: var(--primary2);
+    background: var(--primary4);
     color: black;
     border: 2px solid black;
 }
@@ -340,6 +412,11 @@ legend {
     padding: 0 .25em;
     font-family: 'Shrikhand', serif;
     color: var(--primary1);
+}
+
+footer {
+    text-align: center;
+    height: 30px;
 }
 
 /*FOR LARGER SCREENS*/
