@@ -222,6 +222,7 @@ h1 {
     font-size: 4em;
     position: relative;
     top: 100px;
+    font-weight: 300;
 }
 
 h2 {
@@ -229,7 +230,7 @@ h2 {
     font-family: 'Shrikhand', serif;
 }
 
-p {
+p, h4 {
     font-family: 'Cabin', sans-serif;
 }
 
@@ -273,8 +274,7 @@ i {
 
 .about-text {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    height: 600px;
     background-image: url("Pictures/PiggyBackFlip.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -292,38 +292,79 @@ i {
     flex: 0 0 auto;
 }
 
-.about-text a {
+.about-text a,
+.follow-us a {
     display: inline-block;
-    background: var(--primary4-light);
-    color: black;
+    background: var(--primary4);
+    color: white;
     border-radius: 24px;
     padding: 0.3rem 1.2rem;
 }
 
 .about-text a:hover,
-.about-text a:active {
-    background: var(--primary4);
+.about-text a:active,
+.follow-us a:hover,
+.follow-us a:active {
+    background: var(--primary4-light);
     font-weight: 500;
+    color: black;
 }
 
 .about-p {
-    padding: 2rem;
     text-align: center;
     width: 100%;
     max-width: 70vw;
     margin-bottom: 2rem;
 }
 
+.about-home h1,
+.about-home h2,
+.about h1,
 .about h2 {
-    font-family: 'Shrikhand', serif;
-    font-size: 3em;
-    font-weight: 300;
-    color: var(--primary1);
     text-align: center;
+    font-weight: 500;
+}
+
+.about-home h2 {
+    color: var(--primary1);
+}
+
+.about p {
+    padding: 0 2rem;
+}
+
+.about-questions h2 {
+    font-family: 'Shrikhand', serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    color: var(--primary4-dark);
+    text-shadow: 2px 2px 3px var(--primary4-hover);
+    text-align: left;
+    padding: 0;
+}
+
+.about-questions {
+    position: relative;
+    top: 20vh;
+    margin-bottom: 2rem;
+}
+
+.about-questions p {
+    margin-bottom: 1rem;
+}
+
+.about-anna h4,
+.about-marla h4 {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
 .bold {
     font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
 }
 
 .hero h1 {
@@ -331,10 +372,11 @@ i {
 }
 
 .follow-us {
-    background: var(--primary4-light);
+    background: var(--primary1);
     width: 100vw;
     height: auto;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 li {
@@ -343,10 +385,9 @@ li {
 
 .follow-us h2 {
     font-size: 2rem;
-    color: var(--neutral-dark);
+    color: white;
     font-weight: 500;
     text-align: center;
-    padding: 2rem 0;
 }
 
 .contact {
@@ -357,7 +398,6 @@ li {
     background-position: bottom center;
     margin: 8rem 0;
 }
-
 
 .main-nav li {
     list-style: none;
@@ -453,7 +493,8 @@ legend {
 footer {
     text-align: center;
     height: 30px;
-    background: var(--primary4-light);
+    background: var(--primary1);
+    color: white;
 }
 
 
@@ -505,11 +546,29 @@ footer {
     position: relative;
 }
 
+.about-anna,
+.about-marla {
+    position: relative;
+    top: 20vh;
+}
+
+.about-footer {
+    position: relative;
+    top: 20vh;
+}
+
 .about-anna img {
-    width: 200px;
+    width: 250px;
     height: auto;
     margin: 0 auto;
     display: block;
+}
+
+.about-anna h3 {
+    font-family: 'Shrikhand', serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .about-marla img {
@@ -517,6 +576,28 @@ footer {
     height: auto;
     margin: 0 auto;
     display: block;
+}
+
+.about-marla h3 {
+    font-family: 'Shrikhand', serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.name-adj {
+    margin-bottom: 2rem;
+}
+
+.meet {
+    position: relative;
+    top: 20vh;
+    padding: 0;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+
+    font-weight: 300;
 }
 
 /*FOR LARGER SCREENS*/
