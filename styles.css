@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 a {
     text-decoration: none;
-    font-family: 'Bitter', serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 /*
@@ -230,7 +230,7 @@ h2 {
 }
 
 p {
-    font-family: 'Bitter', serif;
+    font-family: 'Cabin', sans-serif;
 }
 
 
@@ -383,7 +383,7 @@ li {
 }
 
 .contact label {
-    font-family: 'Bitter', serif;
+    font-family: 'Cabin', sans-serif;
     text-align: left;
     font-weight: 700;
     color: black;
@@ -397,7 +397,7 @@ input, textarea {
     border-radius: 5px;
     background: rgba(240, 233, 233, 0.5);
     padding: 0.5em;
-    font-family: 'Bitter', serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 1em;
 }
 
@@ -419,7 +419,7 @@ textarea:focus {
     padding: 0.2rem 1rem;
     border: 2px solid var(--primary4-dark);
     border-radius: 24px;
-    font-family: 'Bitter', serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
     margin: 0 auto;
@@ -477,7 +477,7 @@ footer {
 }
 
 .social-media li {
-    font-family: 'Bitter', serif;
+    font-family: 'Cabin', sans-serif;
     text-align: left;
 }
 
@@ -503,6 +503,20 @@ footer {
 
 .episodes {
     position: relative;
+}
+
+.about-anna img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.about-marla img {
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
 }
 
 /*FOR LARGER SCREENS*/
