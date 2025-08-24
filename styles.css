@@ -62,6 +62,9 @@ a {
     font-family: 'Bitter', serif;
 }
 
+/*
+FOR CTA OPTION 1 BUTTONS
+
 .hero-buttons {
     display: flex;
     flex-direction: row-reverse;
@@ -69,6 +72,7 @@ a {
     gap: 1rem;
     flex-wrap: nowrap;
 }
+
 
 .anchor-primary {
     display: inline-block;
@@ -109,11 +113,12 @@ a {
     border: 1px solid var(--primary4-light);
 
 }
+*/
 
 header {
     width: 100vw;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
@@ -122,22 +127,29 @@ header {
     z-index: 99;
 }
 
+ul, li, a {
+    padding: 0;
+    margin: 0 auto;
+}
+
 .main-nav ul {
     display: flex;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .main-nav ul li a {
-    font-size: 1rem;
-    font-weight: 700;
-    border-radius: 40px;
-    padding: 0.5rem 0.5rem;
-    color: rgb(87, 82, 82);
+    color: black;
+    font-weight: 500;
+    text-transform: lowercase;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
 }
 
-.main-nav ul li:nth-child(1) a {
+/* COLORED BORDERS AROUND ANCHORS 
+    .main-nav ul li:nth-child(1) a {
     background: var(--primary1-hover);
 }
 
@@ -152,7 +164,7 @@ header {
 .main-nav ul li:nth-child(4) a {
     background: var(--primary4-hover);
 }
-
+*/
 .main-nav ul li:nth-child(1) a:hover,
 .main-nav ul li:nth-child(1) a:active {
     color: black;
@@ -191,24 +203,25 @@ header {
     width: 100%;
     height: auto;
     position: relative;
-    top: 50px;
+    top: 100px;
 }
 
 .text-block-hero {
-    height: 60vh;
-    width: 80vw;
+    position: relative;
+    top: 100px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2rem auto;
+    padding: 2rem;
 }
 
 h1 {
     font-family: 'Shrikhand', serif;
     font-size: 4em;
-    margin: 2rem;
     position: relative;
-    top: 50px;
+    top: 100px;
 }
 
 h2 {
@@ -220,11 +233,42 @@ p {
     font-family: 'Bitter', serif;
 }
 
+
 .text-block-hero h2 {
     font-family: 'Shrikhand', serif;
     font-size: 1.5em;
     font-weight: 300;
     color: var(--primary1);
+}
+
+
+.listen-now {
+    text-align: center;
+    padding: 2rem 0;
+    align-content: center;
+}
+
+.listen-now ul {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-content: center;
+}
+
+i {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+
+.listen-now h3 {
+    font-size: 2rem;
+    font-family: 'Shrikhand', serif;
+    font-variant: small-caps;
+    font-weight: 300;
+    margin: 2rem;
 }
 
 .about-text {
@@ -252,23 +296,22 @@ p {
     display: inline-block;
     background: var(--primary4-light);
     color: black;
-    border: 1px solid var(--primary4-dark);
     border-radius: 24px;
     padding: 0.3rem 1.2rem;
 }
 
 .about-text a:hover,
 .about-text a:active {
-    color: black;
-    background: var(--primary4-light);
-    border: 1px solid var(--primary4-light);
+    background: var(--primary4);
+    font-weight: 500;
 }
 
 .about-p {
-    border-radius: 24px;
     padding: 2rem;
-    text-align: left;
-    width: 70vw;
+    text-align: center;
+    width: 100%;
+    max-width: 70vw;
+    margin-bottom: 2rem;
 }
 
 .about h2 {
@@ -312,19 +355,12 @@ li {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom center;
+    margin: 8rem 0;
 }
 
 
 .main-nav li {
     list-style: none;
-}
-
-.main-nav li a {
-    color: var(--neutral-dark);
-    font-family: 'Bitter', serif;
-    text-transform: lowercase;
-    font-weight: 500;
-    font-size: 0.8rem;
 }
 
 .large-text {
@@ -417,6 +453,56 @@ legend {
 footer {
     text-align: center;
     height: 30px;
+    background: var(--primary4-light);
+}
+
+
+.contact-page {
+    text-align: center;
+    position: relative;
+}
+
+.email-container {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    top: 20vh;
+    flex-direction: column;
+    height: 200px;
+}
+
+.email-container i {
+    font-size: 100px;
+    height: 100%;
+}
+
+.social-media li {
+    font-family: 'Bitter', serif;
+    text-align: left;
+}
+
+.contact-page img {
+    width: 100vw;
+    height: auto;
+}
+
+.contact-page p {
+    color: black;
+    font-family: 'Shrikhand', serif;
+    font-size: 1.5rem;
+}
+
+.contact-page h2 {
+    position: relative;
+    top: 20vh;
+}
+
+.contact-page a {
+    color: var(--info);
+}
+
+.episodes {
+    position: relative;
 }
 
 /*FOR LARGER SCREENS*/
